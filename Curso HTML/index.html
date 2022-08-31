@@ -15,24 +15,60 @@
                 <a href="ruta de la pagina">About</a>
             </nav>
         </div>
+        
         <hr/>  <!-- Se utiliza para seprar nuestro html, la / es opcional pero es buena practica ya que indica el final del tag -->
         <br/>  <!-- Se utiliza para seprar nuestro html, la / es opcional pero es buena practica ya que indica el final del tag -->
+
         <p> Hola mundo, primer parrafo</p> <!-- Etiqueta parrafo-->
+
         <h1> Esto es un titulo </h1> <!-- Esto es un titulo rango de h1 a h6-->
         <h6> Esto es un titulo </h6> 
+
         <ul> <!-- Esto es una lista desordenada-->
             <li>item 1</li> <!-- Esto es un item de la una lista -->
             <li>item 2</li> <!-- Esto es un item de la una lista -->
             <li>item 3</li> <!-- Esto es un item de la una lista -->
         </ul>
+
         <ol> <!-- Esto es una lista ordenada-->
             <li>item</li> <!-- Esto es un item de la una lista-->
             <li>item</li> <!-- Esto es un item de la una lista-->
             <li>item</li> <!-- Esto es un item de la una lista-->
         </ol>
+
         <a href="URL de internet o de nuestro diretorio local" target="_blank"> Visita youtube</a> <!-- Insertar un vinculo; target=_blank abre el vinculo en una nueva pestania -->
+        
         <img src="URL de internet o de nuestro diretorio local" alt="imagen"> <!-- inserta una imagen; alt si no carga la imagen pone un texto-->
+        
+        <table> <!-- Se usa para definir una tabla-->
+            <tr> <!-- Se utiliza para definir la fila de una tabla-->
+                <th>Empresa</th> <!-- Se utiliza para definir la columna de una tabla-->
+                <th>Contacto</th> <!-- Se utiliza para definir la columna de una tabla-->
+                <th>Lugar</th> <!-- Se utiliza para definir la columna de una tabla-->
+            </tr>
+            <tr> <!-- Se utiliza para definir la fila de una tabla-->
+                <th>CoriaCORP</th> <!-- Se utiliza para definir la columna de una tabla-->
+                <th>Contacto@gmail.com</th> <!-- Se utiliza para definir la columna de una tabla-->
+                <th>Tandil</th> <!-- Se utiliza para definir la columna de una tabla-->
+            </tr>
+        </table>
+        <form> <!-- Se utiliza para definir un formulario-->
+            <input type="text"><br><!-- Esto especifica un dato de entrada, y con type le decimos que tipo de dato esperamos, en este caso seria un texto-->
+            <input type="date"><br> <!-- Esto especifica un dato de entrada, y con type le decimos que tipo de dato esperamos, en este caso seria una fecha-->
+            <input type="email" placeholder="Email"><br>  <!-- Esto especifica un dato de entrada, y con type le decimos que tipo de dato esperamos, en este caso seria un email lo que obliga al usuario a poner el @; Placeholder sirve para indicar que se espera en forma textual dentro del campo-->
+            <input type="file"><br>  <!-- Esto especifica un dato de entrada, y con type le decimos que tipo de dato esperamos, en este caso seria un archivo-->
+            <input type="number"><br>  <!-- Esto especifica un dato de entrada, y con type le decimos que tipo de dato esperamos, en este caso seria un numero-->
+            <input type="password" required><br>  <!-- Esto especifica un dato de entrada, y con type le decimos que tipo de dato esperamos, en este caso seria un password; Requiered hace que si o si tenga que completar ese campo-->
+            <input type="checkbox"> opcion 1<br>  <!--Simboliza una caja donde el usuario elige si o no-->
+            <label> opcion 1 </label> <!--Es una etiqueta para poner texto en un form-->
+            <input type="radio" name="opcion"><br>  <!--Simboliza una caja donde el usuario elige una unica opcion, para que esto suceda es importante que ambos tengan el mismo name-->
+            <label> opcion 2 </label> <!--Es una etiqueta para poner texto en un form-->
+            <input type="radio" name="opcion"><br>  <!--Simboliza una caja donde el usuario elige una unica opcion, para que esto suceda es importante que ambos tengan el mismo name-->
+            <textarea name="descripcion" cols="30" rows="10"></textarea><br> <!--se utiliza por si el usuario quiere escribir algo como una descripcion-->
+            <button type="submit">Submit</button> <!--Especifica la creacion de un boton con el parametro type submit para enviar el formulario-->            
+        </form>
+        <!-- Teoria -->
+        <!--Un elemento semantico es una etiqueta que tiene un uso especifico mientras que un elemento no semantico es una etiqueta que por si solo no sabemos a que se refiere-->
         <!-- Para poner un codigo de entidad lo hacemos poniendo &entity_code;-->
-        <!-- 1:28:20-->
     </body>
 </html>
