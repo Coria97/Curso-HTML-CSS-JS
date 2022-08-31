@@ -1,0 +1,69 @@
+/* 
+
+---- Teoria ----
+
+SELECTOR{
+    --Aqui adentro seria la declaracion de las propiedades y su valor
+    PROPIEDAD : VALOR;
+}
+
+----Ejemplo----
+p {
+    color: red;
+    text-align: center;
+}
+------------------------------------------------------
+* El asterisco seria aplicar estilo a todo
+
+----Ejemplo----
+
+*{
+    color:red;
+}
+------------------------------------------------------
+Si tenemos por ejemplo:
+
+p {
+    color: red;
+    text-align: center;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+Podriamos ahorrar codigo escribiendo esto ya que es equivalente a lo anterior::after
+
+p,h1,h2 {
+    color: red;
+    text-align: center;
+}
+
+*/
+
+p {
+    text-align: left; /*Sirve para alinear el texto*/
+    color: purple; /*Sirve para darle color al texto*/
+}
+
+#otroEstilo{
+    /*Como no le definimos una posicion hereda la que tiene p*/
+    color: brown;
+}
+
+.center{
+    /*Como no le definimos un color hereda el que tiene p*/
+    text-align: center;
+    color: black;
+}
+
+a.center{
+    /*Poniendo la a.center estamos indicando q solo las a que tengan la clase center van a ser modificadas*/
+    color: red;
+}
