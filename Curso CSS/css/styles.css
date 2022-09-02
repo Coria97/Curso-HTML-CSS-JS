@@ -12,6 +12,22 @@ p {
     color: red;
     text-align: center;
 }
+
+------------------------------------------------------
+
+----Selectores----
+
+TIPO: 
+    -> Son los mas basicos( p, h1, li,...)
+    -> Hay que tratar de usarlos, cuando es posible, poque son mas faciles de manejar.
+CLASE:
+    -> Permite ponerle el mismo estilo a una lista de elementos, agregandole el atributo class
+    -> Se escriben poniendo .NombreDeLaClase
+    -> Se puede utilizar mas de una clase por elemento
+ID:
+    ->Son parecidos a los selectores de clase pero son utilizados solo para un unico elemento por pagina
+    ->Se escriben con #
+
 ------------------------------------------------------
 * El asterisco seria aplicar estilo a todo
 
@@ -45,25 +61,124 @@ p,h1,h2 {
     text-align: center;
 }
 
+------------------------------------------------------
+margin : Para adentro 
+Padding : Para afuera
+
+------------------------------------------------------
+
+----Box Model----
+
+-> CSS permite controlar el aspecto y ubicacion de las cajas.
+-> Todos los elementos HTML estan representados como cajas
+-> Ver imagen Box_Model.jpeg para tener una guia visual de como seria y como tratar con css.
+
+------------------------------------------------------
+
+----Display----
+
+CSS puede definir la manera en la que los elementos de una pagina encajan uno con otros.
+
+-> Block vs Inline (Ver imagen para mayor guia visual Block_vs_Inline.jpeg)
+    Las cajas block por defecto se apilan una encima de otra
+    Las cajas inline no mueven los elementos alrededor de ellas
+
+-> Flex  (Ver imagen para mayor guia visual Flex.jpeg)
+    Le da al contenedor la capacidad de alterar las dimensiones y orden de sus items para manejar mejor el espeacio disponible
+    Diferencia en dos ejes:
+        eje principal: definido por la propiedad flex-direction
+        eje trabnsversal: es perpendicular al principal
+
+    filmina 34
+
 */
+body{
+    background-color: black; /*Sirve para añadir un color al fondo*/
+    background-image: url("../image/messi.jpg"); /*Sirve para añadir una imagen al fondo*/
+    background-repeat: no-repeat; /*Sirve para que la imagen no se repita*/
+    background-position: center top; /*Sirve para posicionar la imagen del fondo*/
+    border: none; /*Sirve para añadir un border a cualquier contenedor*/
+}
+
 
 p {
     text-align: left; /*Sirve para alinear el texto*/
     color: purple; /*Sirve para darle color al texto*/
+    margin: 0px 0px 10px 50px; /*Sirve para aplicar un margen a cualquier contenedor arr,der,abj,izq*/
 }
 
 #otroEstilo{
     /*Como no le definimos una posicion hereda la que tiene p*/
-    color: brown;
+    color: rgb(235,203,39);
 }
 
 .center{
     /*Como no le definimos un color hereda el que tiene p*/
     text-align: center;
-    color: black;
+    color: #11fa11c5;
+}
+
+a:link{ /*Si el link no fue visitado lo marca de otro color*/
+    color: blue;
+}
+
+a:visited{ /*Si el link ya fue visitado lo marca de otro color*/
+    color: green;
+}
+
+a:hover{ /*Si pasas el mouse por encima del link lo pone de ese color*/
+    color: gray;
+}
+
+a{
+    margin-left: 50px; /*Sirve para aplicar un margen a un contenedor especificando*/
 }
 
 a.center{
     /*Poniendo la a.center estamos indicando q solo las a que tengan la clase center van a ser modificadas*/
-    color: red;
+    margin-left: 30px;
+}
+
+button{
+    padding: 10px 10px 10px 10px; /*Sirve para aplicar un padding a cualquier contenedor arr,der,abj,izq*/ ;
+}
+
+.Cuadrado{
+    outline: 10px dotted white; /*Sirve para marcar la lineas afuera de un contenedor*/
+    background-color: goldenrod;
+    width: 100px; /*Sirve para darle ancho a un contenedor*/
+    height: 100px; /*Sirve para darle altura a un contenedor*/
+}
+
+.texto{
+    color: salmon;
+    background-color: forestgreen;
+    text-align: center;
+    text-decoration: overline; /*Sirve para deorar el texto*/
+    text-transform: uppercase; /*Sirve para transformar el texto*/
+    text-indent: 5px; /*Sirve para identar*/
+    letter-spacing: 5px; /*Sirve para dar espaciado entre las letras*/
+    word-spacing: 10px; /*Sirve para dar espaciado entre las palabras*/
+    text-shadow: 3px 6px black; /*Sirve para darle sombreado al texto*/
+}
+
+h1{
+    color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif; /*Sirve para ponerle una fuente a el texto*/
+    font-size: 100px; /*Sirve para cambiar el tamaño de la fuente*/
+}
+
+ul{
+    color: antiquewhite;
+    list-style-type: circle; /*Sirve para cambiar el icono con el que se ve la lista*/
+}
+
+ol{
+    color: crimson;
+    list-style-type: lower-roman;/*Sirve para cambiar el numero con el que se ve la lista*/
+}
+
+table, tr, th{
+    color: aqua;
+    border: 1px solid aqua;
 }
