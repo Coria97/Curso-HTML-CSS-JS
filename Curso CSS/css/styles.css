@@ -88,8 +88,18 @@ CSS puede definir la manera en la que los elementos de una pagina encajan uno co
     Diferencia en dos ejes:
         eje principal: definido por la propiedad flex-direction
         eje trabnsversal: es perpendicular al principal
+    Para ver mas propiedades sobre Flex consultar el set numero 2 de filminas
 
-    filmina 34
+------------------------------------------------------
+
+----Position----
+
+    -> La propiedad position sirve para posicionar un elemento dentro de la pagina.
+    -> Muy util cuando queremos posicionar elementos fuera del flujo normal de la pagina.
+    
+    postion: static/relative/absolute/fixed/sticky;
+
+------------------------------------------------------
 
 */
 body{
